@@ -1,0 +1,600 @@
+{
+  "status": "draft",
+  "version": "1",
+  "categories": [
+    {
+      "id": 1,
+      "group": "Research and planning",
+      "label": "Brainstorming",
+      "description": "AI suggested ideas or directions during development of this work."
+    },
+    {
+      "id": 2,
+      "group": "Research and planning",
+      "label": "Search assistance",
+      "description": "AI proposed search queries or helped locate possible source material."
+    },
+    {
+      "id": 3,
+      "group": "Research and planning",
+      "label": "Source summaries",
+      "description": "AI summarized source material for the creator's use."
+    },
+    {
+      "id": 4,
+      "group": "Research and planning",
+      "label": "Research synthesis",
+      "description": "AI combined information from multiple sources into working notes or findings."
+    },
+    {
+      "id": 5,
+      "group": "Research and planning",
+      "label": "Requirements",
+      "description": "AI helped formulate requirements, constraints, or acceptance criteria."
+    },
+    {
+      "id": 6,
+      "group": "Research and planning",
+      "label": "Outlining",
+      "description": "AI proposed an outline or structure for the work."
+    },
+    {
+      "id": 7,
+      "group": "Research and planning",
+      "label": "Planning",
+      "description": "AI helped organize tasks, milestones, or a production plan."
+    },
+    {
+      "id": 8,
+      "group": "Research and planning",
+      "label": "Concept exploration",
+      "description": "AI produced concepts or prototypes to explore possible approaches."
+    },
+    {
+      "id": 9,
+      "group": "Research and planning",
+      "label": "Critique",
+      "description": "AI evaluated a draft or proposal and suggested improvements."
+    },
+    {
+      "id": 10,
+      "group": "Research and planning",
+      "label": "Option comparison",
+      "description": "AI helped compare alternatives; this alone does not imply it made the final choice."
+    },
+    {
+      "id": 11,
+      "group": "Research and planning",
+      "label": "Learning assistance",
+      "description": "AI explained concepts or techniques that informed the creator's work."
+    },
+    {
+      "id": 12,
+      "group": "Writing and language",
+      "label": "Spelling and grammar",
+      "description": "An AI-based proofreading feature suggested spelling, punctuation, or grammar changes."
+    },
+    {
+      "id": 13,
+      "group": "Writing and language",
+      "label": "Clarity editing",
+      "description": "AI helped clarify or simplify existing text."
+    },
+    {
+      "id": 14,
+      "group": "Writing and language",
+      "label": "Style and tone",
+      "description": "AI helped change the style, tone, or voice of existing text."
+    },
+    {
+      "id": 15,
+      "group": "Writing and language",
+      "label": "Rephrasing",
+      "description": "AI rewrote passages while preserving the creator's intended meaning."
+    },
+    {
+      "id": 16,
+      "group": "Writing and language",
+      "label": "Translation",
+      "description": "AI translated content between languages."
+    },
+    {
+      "id": 17,
+      "group": "Writing and language",
+      "label": "Text summaries",
+      "description": "AI generated a summary included in the delivered work."
+    },
+    {
+      "id": 18,
+      "group": "Writing and language",
+      "label": "Headlines and labels",
+      "description": "AI generated titles, headings, captions, labels, or short interface text."
+    },
+    {
+      "id": 19,
+      "group": "Writing and language",
+      "label": "Draft passages",
+      "description": "AI generated passages incorporated into the work."
+    },
+    {
+      "id": 20,
+      "group": "Writing and language",
+      "label": "Full first draft",
+      "description": "AI generated a complete initial draft of the written work."
+    },
+    {
+      "id": 21,
+      "group": "Writing and language",
+      "label": "Structured text",
+      "description": "AI generated tables, outlines, lists, templates, or structured written content."
+    },
+    {
+      "id": 22,
+      "group": "Writing and language",
+      "label": "Text completion",
+      "description": "AI suggested sentence or paragraph completions incorporated into the work."
+    },
+    {
+      "id": 23,
+      "group": "Images and design",
+      "label": "AI selection and masking",
+      "description": "AI identified image regions, objects, or subjects for selection or masking."
+    },
+    {
+      "id": 24,
+      "group": "Images and design",
+      "label": "Background removal",
+      "description": "AI isolated a subject or removed an image background."
+    },
+    {
+      "id": 25,
+      "group": "Images and design",
+      "label": "Object removal",
+      "description": "AI removed selected objects and reconstructed the affected image area."
+    },
+    {
+      "id": 26,
+      "group": "Images and design",
+      "label": "Generative fill",
+      "description": "AI generated or replaced content inside an existing image or artwork."
+    },
+    {
+      "id": 27,
+      "group": "Images and design",
+      "label": "Outpainting and expansion",
+      "description": "AI generated content beyond an image's or artwork's original bounds, such as Generative Expand."
+    },
+    {
+      "id": 28,
+      "group": "Images and design",
+      "label": "Image enhancement",
+      "description": "AI denoised, sharpened, restored, or upscaled imagery; reconstructed detail may be inferred."
+    },
+    {
+      "id": 29,
+      "group": "Images and design",
+      "label": "Color and lighting",
+      "description": "AI generated or materially altered color, recoloring, lighting, or tonal treatment."
+    },
+    {
+      "id": 30,
+      "group": "Images and design",
+      "label": "Generated imagery",
+      "description": "AI generated a new image used in the work."
+    },
+    {
+      "id": 31,
+      "group": "Images and design",
+      "label": "Generated vector artwork",
+      "description": "AI generated vector shapes, illustrations, icons, or pattern artwork used in the work."
+    },
+    {
+      "id": 32,
+      "group": "Images and design",
+      "label": "Visual transformation",
+      "description": "AI transformed an existing image's style, composition, or visual appearance."
+    },
+    {
+      "id": 33,
+      "group": "Images and design",
+      "label": "Layout assistance",
+      "description": "AI proposed or generated visual arrangements, layouts, or design variants."
+    },
+    {
+      "id": 34,
+      "group": "Video and spatial work",
+      "label": "Video selection and masking",
+      "description": "AI tracked subjects or produced masks for video editing."
+    },
+    {
+      "id": 35,
+      "group": "Video and spatial work",
+      "label": "Video cleanup",
+      "description": "AI removed unwanted video content or reconstructed affected regions."
+    },
+    {
+      "id": 36,
+      "group": "Video and spatial work",
+      "label": "Video enhancement",
+      "description": "AI denoised, restored, upscaled, or interpolated video frames."
+    },
+    {
+      "id": 37,
+      "group": "Video and spatial work",
+      "label": "Generated video",
+      "description": "AI generated video footage used in the work."
+    },
+    {
+      "id": 38,
+      "group": "Video and spatial work",
+      "label": "Video extension",
+      "description": "AI generated additional frames before, after, or beyond existing footage."
+    },
+    {
+      "id": 39,
+      "group": "Video and spatial work",
+      "label": "Video transformation",
+      "description": "AI materially changed existing footage or its visual style."
+    },
+    {
+      "id": 40,
+      "group": "Video and spatial work",
+      "label": "AI-assisted editing",
+      "description": "AI selected shots, assembled sequences, or proposed video edits."
+    },
+    {
+      "id": 41,
+      "group": "Video and spatial work",
+      "label": "Animation assistance",
+      "description": "AI generated or modified animation, motion, poses, or keyframes."
+    },
+    {
+      "id": 42,
+      "group": "Video and spatial work",
+      "label": "Generated 3D assets",
+      "description": "AI generated or reconstructed 3D meshes, scenes, or spatial assets."
+    },
+    {
+      "id": 43,
+      "group": "Video and spatial work",
+      "label": "Textures and materials",
+      "description": "AI generated textures or materials applied to visual or 3D assets."
+    },
+    {
+      "id": 44,
+      "group": "Video and spatial work",
+      "label": "Synthetic presenter",
+      "description": "AI generated or animated an on-screen presenter, avatar, or face performance."
+    },
+    {
+      "id": 45,
+      "group": "Audio and speech",
+      "label": "Transcription",
+      "description": "AI converted recorded speech into text used in the work."
+    },
+    {
+      "id": 46,
+      "group": "Audio and speech",
+      "label": "Captions and timing",
+      "description": "AI generated captions, subtitle timing, or alignment to audio."
+    },
+    {
+      "id": 47,
+      "group": "Audio and speech",
+      "label": "Audio cleanup",
+      "description": "AI reduced noise, removed unwanted sounds, or restored audio."
+    },
+    {
+      "id": 48,
+      "group": "Audio and speech",
+      "label": "Audio separation",
+      "description": "AI separated voices, instruments, or other sound sources."
+    },
+    {
+      "id": 49,
+      "group": "Audio and speech",
+      "label": "Audio editing",
+      "description": "AI selected, trimmed, arranged, or adjusted recorded audio."
+    },
+    {
+      "id": 50,
+      "group": "Audio and speech",
+      "label": "Synthetic speech",
+      "description": "AI generated spoken audio from text using a synthetic voice."
+    },
+    {
+      "id": 51,
+      "group": "Audio and speech",
+      "label": "Voice imitation",
+      "description": "AI generated speech imitating or derived from a particular person's voice; this label does not assert consent."
+    },
+    {
+      "id": 52,
+      "group": "Audio and speech",
+      "label": "Speech translation and dubbing",
+      "description": "AI translated spoken content or generated a replacement language track."
+    },
+    {
+      "id": 53,
+      "group": "Audio and speech",
+      "label": "Generated music",
+      "description": "AI generated music incorporated into the work."
+    },
+    {
+      "id": 54,
+      "group": "Audio and speech",
+      "label": "Generated sound effects",
+      "description": "AI generated sound effects or ambient audio incorporated into the work."
+    },
+    {
+      "id": 55,
+      "group": "Audio and speech",
+      "label": "Mixing and mastering",
+      "description": "AI assisted with equalization, dynamics, balancing, mixing, or mastering."
+    },
+    {
+      "id": 56,
+      "group": "Software and engineering",
+      "label": "Code completion",
+      "description": "AI suggested code completions accepted into the work."
+    },
+    {
+      "id": 57,
+      "group": "Software and engineering",
+      "label": "Generated functions",
+      "description": "AI generated discrete functions, components, or code snippets used in the work."
+    },
+    {
+      "id": 58,
+      "group": "Software and engineering",
+      "label": "Application scaffolding",
+      "description": "AI generated project structure, boilerplate, or an initial application implementation."
+    },
+    {
+      "id": 59,
+      "group": "Software and engineering",
+      "label": "Code translation",
+      "description": "AI translated or migrated code between languages, frameworks, or API versions."
+    },
+    {
+      "id": 60,
+      "group": "Software and engineering",
+      "label": "Refactoring",
+      "description": "AI reorganized or simplified existing code."
+    },
+    {
+      "id": 61,
+      "group": "Software and engineering",
+      "label": "Debugging",
+      "description": "AI investigated errors or proposed fixes used in the work."
+    },
+    {
+      "id": 62,
+      "group": "Software and engineering",
+      "label": "Test generation",
+      "description": "AI generated tests, fixtures, or test cases; this label does not assert that they were run or passed."
+    },
+    {
+      "id": 63,
+      "group": "Software and engineering",
+      "label": "Code review",
+      "description": "AI reviewed code and supplied findings or suggested changes."
+    },
+    {
+      "id": 64,
+      "group": "Software and engineering",
+      "label": "Documentation",
+      "description": "AI drafted or revised technical documentation or code comments."
+    },
+    {
+      "id": 65,
+      "group": "Software and engineering",
+      "label": "Configuration and infrastructure",
+      "description": "AI generated configuration, scripts, build definitions, or infrastructure descriptions."
+    },
+    {
+      "id": 66,
+      "group": "Software and engineering",
+      "label": "Architecture assistance",
+      "description": "AI proposed software architecture, interfaces, or data-model designs."
+    },
+    {
+      "id": 67,
+      "group": "Data and analysis",
+      "label": "Data extraction",
+      "description": "AI extracted structured information from documents or other unstructured inputs."
+    },
+    {
+      "id": 68,
+      "group": "Data and analysis",
+      "label": "Data classification",
+      "description": "AI classified, tagged, or labeled records or content."
+    },
+    {
+      "id": 69,
+      "group": "Data and analysis",
+      "label": "Data cleaning",
+      "description": "AI helped normalize, reconcile, deduplicate, or repair data."
+    },
+    {
+      "id": 70,
+      "group": "Data and analysis",
+      "label": "Synthetic data",
+      "description": "AI generated synthetic examples, records, or datasets used in the work."
+    },
+    {
+      "id": 71,
+      "group": "Data and analysis",
+      "label": "Query and formula generation",
+      "description": "AI generated queries, formulas, or analysis code."
+    },
+    {
+      "id": 72,
+      "group": "Data and analysis",
+      "label": "Exploratory analysis",
+      "description": "AI explored data or suggested patterns, relationships, or hypotheses."
+    },
+    {
+      "id": 73,
+      "group": "Data and analysis",
+      "label": "Statistical assistance",
+      "description": "AI helped choose, implement, or interpret statistical methods."
+    },
+    {
+      "id": 74,
+      "group": "Data and analysis",
+      "label": "Prediction and estimation",
+      "description": "An AI model produced predictions, estimates, or forecasts used in the work."
+    },
+    {
+      "id": 75,
+      "group": "Data and analysis",
+      "label": "Visualization assistance",
+      "description": "AI generated or helped design charts, diagrams, or data visualizations."
+    },
+    {
+      "id": 76,
+      "group": "Data and analysis",
+      "label": "Data interpretation",
+      "description": "AI drafted explanations or conclusions from data or analysis results."
+    },
+    {
+      "id": 77,
+      "group": "Data and analysis",
+      "label": "Model-based evaluation",
+      "description": "AI scored, ranked, or evaluated content or outputs against stated criteria."
+    },
+    {
+      "id": 78,
+      "group": "Agents and automation",
+      "label": "Suggested actions",
+      "description": "AI recommended actions that a human then performed."
+    },
+    {
+      "id": 79,
+      "group": "Agents and automation",
+      "label": "Single tool actions",
+      "description": "AI called tools to perform individual steps in the workflow."
+    },
+    {
+      "id": 80,
+      "group": "Agents and automation",
+      "label": "Multi-step execution",
+      "description": "An AI agent planned or executed a sequence of connected steps."
+    },
+    {
+      "id": 81,
+      "group": "Agents and automation",
+      "label": "Browser interaction",
+      "description": "An AI agent navigated or interacted with websites during production."
+    },
+    {
+      "id": 82,
+      "group": "Agents and automation",
+      "label": "File editing",
+      "description": "An AI agent created or modified project files."
+    },
+    {
+      "id": 83,
+      "group": "Agents and automation",
+      "label": "Command execution",
+      "description": "An AI agent ran commands, scripts, builds, or tests."
+    },
+    {
+      "id": 84,
+      "group": "Agents and automation",
+      "label": "External service actions",
+      "description": "An AI agent performed actions in an external application or service."
+    },
+    {
+      "id": 85,
+      "group": "Agents and automation",
+      "label": "Multiple agents",
+      "description": "Multiple AI agents contributed to the work or reviewed one another's output."
+    },
+    {
+      "id": 86,
+      "group": "Agents and automation",
+      "label": "Human approval gates",
+      "description": "Specified agent actions required human approval before execution."
+    },
+    {
+      "id": 87,
+      "group": "Agents and automation",
+      "label": "Unattended execution",
+      "description": "An AI agent performed some work without a human observing each step live."
+    },
+    {
+      "id": 88,
+      "group": "Agents and automation",
+      "label": "Iterative agent work",
+      "description": "An AI agent evaluated intermediate results and revised its work over multiple iterations."
+    },
+    {
+      "id": 89,
+      "group": "Human involvement and uncertainty",
+      "label": "AI-capable software only",
+      "description": "AI-capable software was used, but the creator reports no known AI feature use in this work; available features alone are not evidence of use."
+    },
+    {
+      "id": 90,
+      "group": "Human involvement and uncertainty",
+      "label": "Uncertain AI involvement",
+      "description": "The creator cannot establish whether AI contributed to one or more steps or inputs."
+    },
+    {
+      "id": 91,
+      "group": "Human involvement and uncertainty",
+      "label": "Human source material",
+      "description": "Human-authored source material, designs, recordings, or code formed part of the input."
+    },
+    {
+      "id": 92,
+      "group": "Human involvement and uncertainty",
+      "label": "Human direction",
+      "description": "A human supplied the goals, prompts, constraints, or creative direction."
+    },
+    {
+      "id": 93,
+      "group": "Human involvement and uncertainty",
+      "label": "Human selection",
+      "description": "A human selected which AI suggestions or outputs to include."
+    },
+    {
+      "id": 94,
+      "group": "Human involvement and uncertainty",
+      "label": "Human revision",
+      "description": "A human materially edited or reworked AI output before inclusion."
+    },
+    {
+      "id": 95,
+      "group": "Human involvement and uncertainty",
+      "label": "Full human review",
+      "description": "A human reviewed all AI-affected portions of the declared work before release."
+    },
+    {
+      "id": 96,
+      "group": "Human involvement and uncertainty",
+      "label": "Independent factual checks",
+      "description": "A human checked relevant factual claims against sources independent of the generating AI."
+    },
+    {
+      "id": 97,
+      "group": "Human involvement and uncertainty",
+      "label": "Human-reviewed test results",
+      "description": "Tests were executed and their results reviewed by a human; this does not imply full coverage or correctness."
+    },
+    {
+      "id": 98,
+      "group": "Human involvement and uncertainty",
+      "label": "Partial human review",
+      "description": "A human reviewed only some AI-affected portions of the declared work before release."
+    },
+    {
+      "id": 99,
+      "group": "Human involvement and uncertainty",
+      "label": "No human output review",
+      "description": "The declared AI output was released without human review of that output."
+    }
+  ]
+}

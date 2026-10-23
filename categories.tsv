@@ -1,0 +1,100 @@
+id	group	label	description
+1	Research and planning	Brainstorming	AI suggested ideas or directions during development of this work.
+2	Research and planning	Search assistance	AI proposed search queries or helped locate possible source material.
+3	Research and planning	Source summaries	AI summarized source material for the creator's use.
+4	Research and planning	Research synthesis	AI combined information from multiple sources into working notes or findings.
+5	Research and planning	Requirements	AI helped formulate requirements, constraints, or acceptance criteria.
+6	Research and planning	Outlining	AI proposed an outline or structure for the work.
+7	Research and planning	Planning	AI helped organize tasks, milestones, or a production plan.
+8	Research and planning	Concept exploration	AI produced concepts or prototypes to explore possible approaches.
+9	Research and planning	Critique	AI evaluated a draft or proposal and suggested improvements.
+10	Research and planning	Option comparison	AI helped compare alternatives; this alone does not imply it made the final choice.
+11	Research and planning	Learning assistance	AI explained concepts or techniques that informed the creator's work.
+12	Writing and language	Spelling and grammar	An AI-based proofreading feature suggested spelling, punctuation, or grammar changes.
+13	Writing and language	Clarity editing	AI helped clarify or simplify existing text.
+14	Writing and language	Style and tone	AI helped change the style, tone, or voice of existing text.
+15	Writing and language	Rephrasing	AI rewrote passages while preserving the creator's intended meaning.
+16	Writing and language	Translation	AI translated content between languages.
+17	Writing and language	Text summaries	AI generated a summary included in the delivered work.
+18	Writing and language	Headlines and labels	AI generated titles, headings, captions, labels, or short interface text.
+19	Writing and language	Draft passages	AI generated passages incorporated into the work.
+20	Writing and language	Full first draft	AI generated a complete initial draft of the written work.
+21	Writing and language	Structured text	AI generated tables, outlines, lists, templates, or structured written content.
+22	Writing and language	Text completion	AI suggested sentence or paragraph completions incorporated into the work.
+23	Images and design	AI selection and masking	AI identified image regions, objects, or subjects for selection or masking.
+24	Images and design	Background removal	AI isolated a subject or removed an image background.
+25	Images and design	Object removal	AI removed selected objects and reconstructed the affected image area.
+26	Images and design	Generative fill	AI generated or replaced content inside an existing image or artwork.
+27	Images and design	Outpainting and expansion	AI generated content beyond an image's or artwork's original bounds, such as Generative Expand.
+28	Images and design	Image enhancement	AI denoised, sharpened, restored, or upscaled imagery; reconstructed detail may be inferred.
+29	Images and design	Color and lighting	AI generated or materially altered color, recoloring, lighting, or tonal treatment.
+30	Images and design	Generated imagery	AI generated a new image used in the work.
+31	Images and design	Generated vector artwork	AI generated vector shapes, illustrations, icons, or pattern artwork used in the work.
+32	Images and design	Visual transformation	AI transformed an existing image's style, composition, or visual appearance.
+33	Images and design	Layout assistance	AI proposed or generated visual arrangements, layouts, or design variants.
+34	Video and spatial work	Video selection and masking	AI tracked subjects or produced masks for video editing.
+35	Video and spatial work	Video cleanup	AI removed unwanted video content or reconstructed affected regions.
+36	Video and spatial work	Video enhancement	AI denoised, restored, upscaled, or interpolated video frames.
+37	Video and spatial work	Generated video	AI generated video footage used in the work.
+38	Video and spatial work	Video extension	AI generated additional frames before, after, or beyond existing footage.
+39	Video and spatial work	Video transformation	AI materially changed existing footage or its visual style.
+40	Video and spatial work	AI-assisted editing	AI selected shots, assembled sequences, or proposed video edits.
+41	Video and spatial work	Animation assistance	AI generated or modified animation, motion, poses, or keyframes.
+42	Video and spatial work	Generated 3D assets	AI generated or reconstructed 3D meshes, scenes, or spatial assets.
+43	Video and spatial work	Textures and materials	AI generated textures or materials applied to visual or 3D assets.
+44	Video and spatial work	Synthetic presenter	AI generated or animated an on-screen presenter, avatar, or face performance.
+45	Audio and speech	Transcription	AI converted recorded speech into text used in the work.
+46	Audio and speech	Captions and timing	AI generated captions, subtitle timing, or alignment to audio.
+47	Audio and speech	Audio cleanup	AI reduced noise, removed unwanted sounds, or restored audio.
+48	Audio and speech	Audio separation	AI separated voices, instruments, or other sound sources.
+49	Audio and speech	Audio editing	AI selected, trimmed, arranged, or adjusted recorded audio.
+50	Audio and speech	Synthetic speech	AI generated spoken audio from text using a synthetic voice.
+51	Audio and speech	Voice imitation	AI generated speech imitating or derived from a particular person's voice; this label does not assert consent.
+52	Audio and speech	Speech translation and dubbing	AI translated spoken content or generated a replacement language track.
+53	Audio and speech	Generated music	AI generated music incorporated into the work.
+54	Audio and speech	Generated sound effects	AI generated sound effects or ambient audio incorporated into the work.
+55	Audio and speech	Mixing and mastering	AI assisted with equalization, dynamics, balancing, mixing, or mastering.
+56	Software and engineering	Code completion	AI suggested code completions accepted into the work.
+57	Software and engineering	Generated functions	AI generated discrete functions, components, or code snippets used in the work.
+58	Software and engineering	Application scaffolding	AI generated project structure, boilerplate, or an initial application implementation.
+59	Software and engineering	Code translation	AI translated or migrated code between languages, frameworks, or API versions.
+60	Software and engineering	Refactoring	AI reorganized or simplified existing code.
+61	Software and engineering	Debugging	AI investigated errors or proposed fixes used in the work.
+62	Software and engineering	Test generation	AI generated tests, fixtures, or test cases; this label does not assert that they were run or passed.
+63	Software and engineering	Code review	AI reviewed code and supplied findings or suggested changes.
+64	Software and engineering	Documentation	AI drafted or revised technical documentation or code comments.
+65	Software and engineering	Configuration and infrastructure	AI generated configuration, scripts, build definitions, or infrastructure descriptions.
+66	Software and engineering	Architecture assistance	AI proposed software architecture, interfaces, or data-model designs.
+67	Data and analysis	Data extraction	AI extracted structured information from documents or other unstructured inputs.
+68	Data and analysis	Data classification	AI classified, tagged, or labeled records or content.
+69	Data and analysis	Data cleaning	AI helped normalize, reconcile, deduplicate, or repair data.
+70	Data and analysis	Synthetic data	AI generated synthetic examples, records, or datasets used in the work.
+71	Data and analysis	Query and formula generation	AI generated queries, formulas, or analysis code.
+72	Data and analysis	Exploratory analysis	AI explored data or suggested patterns, relationships, or hypotheses.
+73	Data and analysis	Statistical assistance	AI helped choose, implement, or interpret statistical methods.
+74	Data and analysis	Prediction and estimation	An AI model produced predictions, estimates, or forecasts used in the work.
+75	Data and analysis	Visualization assistance	AI generated or helped design charts, diagrams, or data visualizations.
+76	Data and analysis	Data interpretation	AI drafted explanations or conclusions from data or analysis results.
+77	Data and analysis	Model-based evaluation	AI scored, ranked, or evaluated content or outputs against stated criteria.
+78	Agents and automation	Suggested actions	AI recommended actions that a human then performed.
+79	Agents and automation	Single tool actions	AI called tools to perform individual steps in the workflow.
+80	Agents and automation	Multi-step execution	An AI agent planned or executed a sequence of connected steps.
+81	Agents and automation	Browser interaction	An AI agent navigated or interacted with websites during production.
+82	Agents and automation	File editing	An AI agent created or modified project files.
+83	Agents and automation	Command execution	An AI agent ran commands, scripts, builds, or tests.
+84	Agents and automation	External service actions	An AI agent performed actions in an external application or service.
+85	Agents and automation	Multiple agents	Multiple AI agents contributed to the work or reviewed one another's output.
+86	Agents and automation	Human approval gates	Specified agent actions required human approval before execution.
+87	Agents and automation	Unattended execution	An AI agent performed some work without a human observing each step live.
+88	Agents and automation	Iterative agent work	An AI agent evaluated intermediate results and revised its work over multiple iterations.
+89	Human involvement and uncertainty	AI-capable software only	AI-capable software was used, but the creator reports no known AI feature use in this work; available features alone are not evidence of use.
+90	Human involvement and uncertainty	Uncertain AI involvement	The creator cannot establish whether AI contributed to one or more steps or inputs.
+91	Human involvement and uncertainty	Human source material	Human-authored source material, designs, recordings, or code formed part of the input.
+92	Human involvement and uncertainty	Human direction	A human supplied the goals, prompts, constraints, or creative direction.
+93	Human involvement and uncertainty	Human selection	A human selected which AI suggestions or outputs to include.
+94	Human involvement and uncertainty	Human revision	A human materially edited or reworked AI output before inclusion.
+95	Human involvement and uncertainty	Full human review	A human reviewed all AI-affected portions of the declared work before release.
+96	Human involvement and uncertainty	Independent factual checks	A human checked relevant factual claims against sources independent of the generating AI.
+97	Human involvement and uncertainty	Human-reviewed test results	Tests were executed and their results reviewed by a human; this does not imply full coverage or correctness.
+98	Human involvement and uncertainty	Partial human review	A human reviewed only some AI-affected portions of the declared work before release.
+99	Human involvement and uncertainty	No human output review	The declared AI output was released without human review of that output.

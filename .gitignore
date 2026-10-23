@@ -1,0 +1,10 @@
+node_modules/
+.wrangler/
+__pycache__/
+.env*
+.dev.vars*
+purchase-status.json
+domain-research.json
+verification.json
+artifacts/
+.haikrew/
