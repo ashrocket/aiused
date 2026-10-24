@@ -1,5 +1,5 @@
 {
-  "status": "draft",
+  "status": "published",
   "version": "1",
   "categories": [
     {
@@ -596,5 +596,7 @@
       "label": "No human output review",
       "description": "The declared AI output was released without human review of that output."
     }
-  ]
+  ],
+  "published": "2026-10-23",
+  "stability": "Category IDs, meanings and the version 1 encoding are immutable."
 }

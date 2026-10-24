@@ -1,0 +1,21 @@
+{
+  "name": "aiused",
+  "account_id": "ce40c57a207aaaa76ae172d63447828d",
+  "main": "artifacts/worker-modules/worker.mjs",
+  "base_dir": "artifacts/worker-modules",
+  "compatibility_date": "2026-10-23",
+  "no_bundle": true,
+  "find_additional_modules": true,
+  "rules": [{ "type": "ESModule", "globs": ["**/*.mjs"], "fallthrough": false }],
+  "build": { "command": "python3 scripts/package.py" },
+  "workers_dev": true,
+  "preview_urls": false,
+  "routes": [{ "pattern": "aiused.org", "custom_domain": true }],
+  "observability": {
+    "enabled": true,
+    "redact_query_string": true,
+    "head_sampling_rate": 0.01,
+    "logs": { "enabled": true, "invocation_logs": false, "head_sampling_rate": 0.01 },
+    "traces": { "enabled": true, "head_sampling_rate": 0.01 }
+  }
+}
