@@ -36,3 +36,6 @@ wrangler.jsonc. Use `npm run deploy:check` then `npm run deploy`; do not use the
 older global Wrangler, which does not understand the named profile. Do not copy
 credentials into the repo. Read DEPLOYMENT.md before claiming current source is
 the live release, especially while another Codex session is editing this checkout.
+The public source repository is `ashrocket/aiused`; a GitHub push does not deploy
+the Worker. Keep purchase records and unfinished vocabulary drafts out of the
+public release unless they have been explicitly reviewed for publication.

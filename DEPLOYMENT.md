@@ -6,6 +6,9 @@ Current verified Worker version: `dfe95dd7-0a24-4a35-8967-a769841baac3`.
 The canonical example is https://aiused.org/1/Y_3. The first-release
 `/1Y_3` citation and `/qr/1Y_3.svg` routes return 308 redirects to the
 versioned paths while preserving the published 99 meanings.
+Public source: https://github.com/ashrocket/aiused, commit `28d91c6`.
+The contribution links returned HTTP 200 after publication, and the GitHub
+Verify workflow passed at https://github.com/ashrocket/aiused/actions/runs/40055964264.
 
 The release uses the intentional version-path source from the shared checkout.
 Before deployment, the QR generator and tests were updated for the new full URL;
@@ -96,5 +99,5 @@ The first-release citations used `/1Y_3`, and QR downloads used
 code meanings and links. SVG sizes are 12 mm by default with 10/16/24 mm UI options;
 the four-module white border must remain. Actual print scanning is unverified.
 
-The blog's GitHub contribution links returned 404 during this release's checks.
-Repository publication remains part of the intentional parallel session's work.
+The blog's GitHub contribution links returned 404 during this initial release's
+checks. The source repository was published with the versioned citation release.

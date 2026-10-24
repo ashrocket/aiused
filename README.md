@@ -4,7 +4,8 @@ First release deployed, 23 October 2026. Domain: `aiused.org` (AI used).
 Cloudflare registration is active through 23 October 2027. Checkout total: $8.50;
 auto-renewal is off; the current advertised renewal price is $11.20/year.
 Domain checkout and ownership status are recorded separately in `purchase-status.json`.
-The citation site is live at https://aiused.org. Initial Worker version:
+The citation site is live at https://aiused.org. Public source and contribution
+guide: https://github.com/ashrocket/aiused. Initial Worker version:
 `d1d5c280-e193-4925-a3c5-0450c879acb7`; current verified version is
 `dfe95dd7-0a24-4a35-8967-a769841baac3`. HTTPS pages, legacy redirects,
 JSON, the frozen vocabulary hash, QR SVG output, and browser interactions were
