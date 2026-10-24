@@ -20,7 +20,7 @@ test('citation is fully readable without script execution',async()=>{
  assert.match(html,/aiused.org\/1\/Y_3/);assert.match(html,/Unselected categories are unclaimed/);
  assert.match(html,/<code>1\/Y_3<\/code>/);
  assert.match(html,/src="\/assets\/app\.mjs\?v=2"/);
- assert.match(html,/href="\/assets\/site\.css\?v=2"/);
+ assert.match(html,/href="\/assets\/site\.css\?v=4"/);
  assert.match(response.headers.get('Content-Security-Policy'),/script-src 'self'/);
 });
 test('JSON preserves semantics and casing across extreme combinations',async()=>{
@@ -60,11 +60,19 @@ test('QR route validates options and returns downloadable vector with quiet zone
  for(const query of ['mm=0','mm=41','mm=NaN','mm=Infinity','mm=','ecc=H'])assert.equal(get('/qr/1/Y_3.svg?'+query).status,400);
 });
 test('routes, browser assets, HEAD, and method restrictions',async()=>{
- for(const path of ['/','/?code=1/Y_3','/about','/v1','/v1/categories.json','/blog/why-ai-used','/health','/assets/app.mjs?v=2','/assets/site.css?v=2','/assets/codec.mjs?v=2','/robots.txt','/sitemap.xml','/favicon.svg'])assert.equal(get(path).status,200,path);
+ for(const path of ['/','/?code=1/Y_3','/explore','/about','/v1','/v1/categories.json','/blog/why-ai-used','/health','/assets/app.mjs?v=2','/assets/explore.mjs?v=1','/assets/site.css?v=4','/assets/codec.mjs?v=2','/robots.txt','/sitemap.xml','/favicon.svg'])assert.equal(get(path).status,200,path);
  assert.match(await get('/?code=1/Y_3').text(),/value="27" checked/);
  assert.equal(get('/?code=oops').status,400);
  assert.equal(await get('/1/Y_3','HEAD').text(),'');
  assert.equal(get('/','POST').status,405);
+});
+test('explorer renders the published vocabulary and computation without JavaScript',async()=>{
+ const html=await get('/explore').text();
+ assert.match(html,/Vocabulary version 1/);
+ assert.match(html,/Smaller-set offset/);
+ assert.match(html,/Combination rank/);
+ assert.match(html,/value="27"/);
+ assert.match(html,/src="\/assets\/explore\.mjs\?v=1"/);
 });
 test('blog explains versioned codes and contribution route without script execution',async()=>{
  const response=get('/blog/why-ai-used'),html=await response.text();

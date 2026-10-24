@@ -1,0 +1,800 @@
+{
+  "status": "draft",
+  "version": "2",
+  "universe_size": 999,
+  "layout": "Nine AI-action groups occupy 100-ID blocks; 11 defined slots per group are spaced nine IDs apart. Human context is a separate draft catalog in IDs 900-999.",
+  "categories": [
+    {
+      "id": 1,
+      "group": "Research and planning",
+      "label": "Brainstorming",
+      "description": "AI suggested ideas or directions during development of this work.",
+      "kind": "assist",
+      "source_v1_id": 1
+    },
+    {
+      "id": 10,
+      "group": "Research and planning",
+      "label": "Search assistance",
+      "description": "AI proposed search queries or helped locate possible source material.",
+      "kind": "assist",
+      "source_v1_id": 2
+    },
+    {
+      "id": 19,
+      "group": "Research and planning",
+      "label": "Source summaries",
+      "description": "AI summarized source material for the creator's use.",
+      "kind": "assist",
+      "source_v1_id": 3
+    },
+    {
+      "id": 28,
+      "group": "Research and planning",
+      "label": "Research synthesis",
+      "description": "AI combined information from multiple sources into working notes or findings.",
+      "kind": "assist",
+      "source_v1_id": 4
+    },
+    {
+      "id": 37,
+      "group": "Research and planning",
+      "label": "Requirements",
+      "description": "AI helped formulate requirements, constraints, or acceptance criteria.",
+      "kind": "assist",
+      "source_v1_id": 5
+    },
+    {
+      "id": 46,
+      "group": "Research and planning",
+      "label": "Outlining",
+      "description": "AI proposed an outline or structure for the work.",
+      "kind": "assist",
+      "source_v1_id": 6
+    },
+    {
+      "id": 55,
+      "group": "Research and planning",
+      "label": "Planning",
+      "description": "AI helped organize tasks, milestones, or a production plan.",
+      "kind": "assist",
+      "source_v1_id": 7
+    },
+    {
+      "id": 64,
+      "group": "Research and planning",
+      "label": "Concept exploration",
+      "description": "AI produced concepts or prototypes to explore possible approaches.",
+      "kind": "assist",
+      "source_v1_id": 8
+    },
+    {
+      "id": 73,
+      "group": "Research and planning",
+      "label": "Critique",
+      "description": "AI evaluated a draft or proposal and suggested improvements.",
+      "kind": "assist",
+      "source_v1_id": 9
+    },
+    {
+      "id": 82,
+      "group": "Research and planning",
+      "label": "Option comparison",
+      "description": "AI helped compare alternatives; this alone does not imply it made the final choice.",
+      "kind": "assist",
+      "source_v1_id": 10
+    },
+    {
+      "id": 91,
+      "group": "Research and planning",
+      "label": "Learning assistance",
+      "description": "AI explained concepts or techniques that informed the creator's work.",
+      "kind": "assist",
+      "source_v1_id": 11
+    },
+    {
+      "id": 101,
+      "group": "Writing and language",
+      "label": "Spelling and grammar",
+      "description": "An AI-based proofreading feature suggested spelling, punctuation, or grammar changes.",
+      "kind": "assist",
+      "source_v1_id": 12
+    },
+    {
+      "id": 110,
+      "group": "Writing and language",
+      "label": "Clarity editing",
+      "description": "AI helped clarify or simplify existing text.",
+      "kind": "assist",
+      "source_v1_id": 13
+    },
+    {
+      "id": 119,
+      "group": "Writing and language",
+      "label": "Style and tone",
+      "description": "AI helped change the style, tone, or voice of existing text.",
+      "kind": "assist",
+      "source_v1_id": 14
+    },
+    {
+      "id": 128,
+      "group": "Writing and language",
+      "label": "Rephrasing",
+      "description": "AI rewrote passages while preserving the creator's intended meaning.",
+      "kind": "assist",
+      "source_v1_id": 15
+    },
+    {
+      "id": 137,
+      "group": "Writing and language",
+      "label": "Translation",
+      "description": "AI translated content between languages.",
+      "kind": "assist",
+      "source_v1_id": 16
+    },
+    {
+      "id": 146,
+      "group": "Writing and language",
+      "label": "Text summaries",
+      "description": "AI generated a summary included in the delivered work.",
+      "kind": "assist",
+      "source_v1_id": 17
+    },
+    {
+      "id": 155,
+      "group": "Writing and language",
+      "label": "Headlines and labels",
+      "description": "AI generated titles, headings, captions, labels, or short interface text.",
+      "kind": "assist",
+      "source_v1_id": 18
+    },
+    {
+      "id": 164,
+      "group": "Writing and language",
+      "label": "Draft passages",
+      "description": "AI generated passages incorporated into the work.",
+      "kind": "assist",
+      "source_v1_id": 19
+    },
+    {
+      "id": 173,
+      "group": "Writing and language",
+      "label": "Full first draft",
+      "description": "AI generated a complete initial draft of the written work.",
+      "kind": "assist",
+      "source_v1_id": 20
+    },
+    {
+      "id": 182,
+      "group": "Writing and language",
+      "label": "Structured text",
+      "description": "AI generated tables, outlines, lists, templates, or structured written content.",
+      "kind": "assist",
+      "source_v1_id": 21
+    },
+    {
+      "id": 191,
+      "group": "Writing and language",
+      "label": "Text completion",
+      "description": "AI suggested sentence or paragraph completions incorporated into the work.",
+      "kind": "assist",
+      "source_v1_id": 22
+    },
+    {
+      "id": 201,
+      "group": "Images and design",
+      "label": "AI selection and masking",
+      "description": "AI identified image regions, objects, or subjects for selection or masking.",
+      "kind": "assist",
+      "source_v1_id": 23
+    },
+    {
+      "id": 210,
+      "group": "Images and design",
+      "label": "Background removal",
+      "description": "AI isolated a subject or removed an image background.",
+      "kind": "assist",
+      "source_v1_id": 24
+    },
+    {
+      "id": 219,
+      "group": "Images and design",
+      "label": "Object removal",
+      "description": "AI removed selected objects and reconstructed the affected image area.",
+      "kind": "assist",
+      "source_v1_id": 25
+    },
+    {
+      "id": 228,
+      "group": "Images and design",
+      "label": "Generative fill",
+      "description": "AI generated or replaced content inside an existing image or artwork.",
+      "kind": "assist",
+      "source_v1_id": 26
+    },
+    {
+      "id": 237,
+      "group": "Images and design",
+      "label": "Outpainting and expansion",
+      "description": "AI generated content beyond an image's or artwork's original bounds, such as Generative Expand.",
+      "kind": "assist",
+      "source_v1_id": 27
+    },
+    {
+      "id": 246,
+      "group": "Images and design",
+      "label": "Image enhancement",
+      "description": "AI denoised, sharpened, restored, or upscaled imagery; reconstructed detail may be inferred.",
+      "kind": "assist",
+      "source_v1_id": 28
+    },
+    {
+      "id": 255,
+      "group": "Images and design",
+      "label": "Color and lighting",
+      "description": "AI generated or materially altered color, recoloring, lighting, or tonal treatment.",
+      "kind": "assist",
+      "source_v1_id": 29
+    },
+    {
+      "id": 264,
+      "group": "Images and design",
+      "label": "Generated imagery",
+      "description": "AI generated a new image used in the work.",
+      "kind": "assist",
+      "source_v1_id": 30
+    },
+    {
+      "id": 273,
+      "group": "Images and design",
+      "label": "Generated vector artwork",
+      "description": "AI generated vector shapes, illustrations, icons, or pattern artwork used in the work.",
+      "kind": "assist",
+      "source_v1_id": 31
+    },
+    {
+      "id": 282,
+      "group": "Images and design",
+      "label": "Visual transformation",
+      "description": "AI transformed an existing image's style, composition, or visual appearance.",
+      "kind": "assist",
+      "source_v1_id": 32
+    },
+    {
+      "id": 291,
+      "group": "Images and design",
+      "label": "Layout assistance",
+      "description": "AI proposed or generated visual arrangements, layouts, or design variants.",
+      "kind": "assist",
+      "source_v1_id": 33
+    },
+    {
+      "id": 301,
+      "group": "Video and spatial work",
+      "label": "Video selection and masking",
+      "description": "AI tracked subjects or produced masks for video editing.",
+      "kind": "assist",
+      "source_v1_id": 34
+    },
+    {
+      "id": 310,
+      "group": "Video and spatial work",
+      "label": "Video cleanup",
+      "description": "AI removed unwanted video content or reconstructed affected regions.",
+      "kind": "assist",
+      "source_v1_id": 35
+    },
+    {
+      "id": 319,
+      "group": "Video and spatial work",
+      "label": "Video enhancement",
+      "description": "AI denoised, restored, upscaled, or interpolated video frames.",
+      "kind": "assist",
+      "source_v1_id": 36
+    },
+    {
+      "id": 328,
+      "group": "Video and spatial work",
+      "label": "Generated video",
+      "description": "AI generated video footage used in the work.",
+      "kind": "assist",
+      "source_v1_id": 37
+    },
+    {
+      "id": 337,
+      "group": "Video and spatial work",
+      "label": "Video extension",
+      "description": "AI generated additional frames before, after, or beyond existing footage.",
+      "kind": "assist",
+      "source_v1_id": 38
+    },
+    {
+      "id": 346,
+      "group": "Video and spatial work",
+      "label": "Video transformation",
+      "description": "AI materially changed existing footage or its visual style.",
+      "kind": "assist",
+      "source_v1_id": 39
+    },
+    {
+      "id": 355,
+      "group": "Video and spatial work",
+      "label": "AI-assisted editing",
+      "description": "AI selected shots, assembled sequences, or proposed video edits.",
+      "kind": "assist",
+      "source_v1_id": 40
+    },
+    {
+      "id": 364,
+      "group": "Video and spatial work",
+      "label": "Animation assistance",
+      "description": "AI generated or modified animation, motion, poses, or keyframes.",
+      "kind": "assist",
+      "source_v1_id": 41
+    },
+    {
+      "id": 373,
+      "group": "Video and spatial work",
+      "label": "Generated 3D assets",
+      "description": "AI generated or reconstructed 3D meshes, scenes, or spatial assets.",
+      "kind": "assist",
+      "source_v1_id": 42
+    },
+    {
+      "id": 382,
+      "group": "Video and spatial work",
+      "label": "Textures and materials",
+      "description": "AI generated textures or materials applied to visual or 3D assets.",
+      "kind": "assist",
+      "source_v1_id": 43
+    },
+    {
+      "id": 391,
+      "group": "Video and spatial work",
+      "label": "Synthetic presenter",
+      "description": "AI generated or animated an on-screen presenter, avatar, or face performance.",
+      "kind": "assist",
+      "source_v1_id": 44
+    },
+    {
+      "id": 401,
+      "group": "Audio and speech",
+      "label": "Transcription",
+      "description": "AI converted recorded speech into text used in the work.",
+      "kind": "assist",
+      "source_v1_id": 45
+    },
+    {
+      "id": 410,
+      "group": "Audio and speech",
+      "label": "Captions and timing",
+      "description": "AI generated captions, subtitle timing, or alignment to audio.",
+      "kind": "assist",
+      "source_v1_id": 46
+    },
+    {
+      "id": 419,
+      "group": "Audio and speech",
+      "label": "Audio cleanup",
+      "description": "AI reduced noise, removed unwanted sounds, or restored audio.",
+      "kind": "assist",
+      "source_v1_id": 47
+    },
+    {
+      "id": 428,
+      "group": "Audio and speech",
+      "label": "Audio separation",
+      "description": "AI separated voices, instruments, or other sound sources.",
+      "kind": "assist",
+      "source_v1_id": 48
+    },
+    {
+      "id": 437,
+      "group": "Audio and speech",
+      "label": "Audio editing",
+      "description": "AI selected, trimmed, arranged, or adjusted recorded audio.",
+      "kind": "assist",
+      "source_v1_id": 49
+    },
+    {
+      "id": 446,
+      "group": "Audio and speech",
+      "label": "Synthetic speech",
+      "description": "AI generated spoken audio from text using a synthetic voice.",
+      "kind": "assist",
+      "source_v1_id": 50
+    },
+    {
+      "id": 455,
+      "group": "Audio and speech",
+      "label": "Voice imitation",
+      "description": "AI generated speech imitating or derived from a particular person's voice; this label does not assert consent.",
+      "kind": "assist",
+      "source_v1_id": 51
+    },
+    {
+      "id": 464,
+      "group": "Audio and speech",
+      "label": "Speech translation and dubbing",
+      "description": "AI translated spoken content or generated a replacement language track.",
+      "kind": "assist",
+      "source_v1_id": 52
+    },
+    {
+      "id": 473,
+      "group": "Audio and speech",
+      "label": "Generated music",
+      "description": "AI generated music incorporated into the work.",
+      "kind": "assist",
+      "source_v1_id": 53
+    },
+    {
+      "id": 482,
+      "group": "Audio and speech",
+      "label": "Generated sound effects",
+      "description": "AI generated sound effects or ambient audio incorporated into the work.",
+      "kind": "assist",
+      "source_v1_id": 54
+    },
+    {
+      "id": 491,
+      "group": "Audio and speech",
+      "label": "Mixing and mastering",
+      "description": "AI assisted with equalization, dynamics, balancing, mixing, or mastering.",
+      "kind": "assist",
+      "source_v1_id": 55
+    },
+    {
+      "id": 501,
+      "group": "Software and engineering",
+      "label": "Code completion",
+      "description": "AI suggested code completions accepted into the work.",
+      "kind": "assist",
+      "source_v1_id": 56
+    },
+    {
+      "id": 510,
+      "group": "Software and engineering",
+      "label": "Generated functions",
+      "description": "AI generated discrete functions, components, or code snippets used in the work.",
+      "kind": "assist",
+      "source_v1_id": 57
+    },
+    {
+      "id": 519,
+      "group": "Software and engineering",
+      "label": "Application scaffolding",
+      "description": "AI generated project structure, boilerplate, or an initial application implementation.",
+      "kind": "assist",
+      "source_v1_id": 58
+    },
+    {
+      "id": 528,
+      "group": "Software and engineering",
+      "label": "Code translation",
+      "description": "AI translated or migrated code between languages, frameworks, or API versions.",
+      "kind": "assist",
+      "source_v1_id": 59
+    },
+    {
+      "id": 537,
+      "group": "Software and engineering",
+      "label": "Refactoring",
+      "description": "AI reorganized or simplified existing code.",
+      "kind": "assist",
+      "source_v1_id": 60
+    },
+    {
+      "id": 546,
+      "group": "Software and engineering",
+      "label": "Debugging",
+      "description": "AI investigated errors or proposed fixes used in the work.",
+      "kind": "assist",
+      "source_v1_id": 61
+    },
+    {
+      "id": 555,
+      "group": "Software and engineering",
+      "label": "Test generation",
+      "description": "AI generated tests, fixtures, or test cases; this label does not assert that they were run or passed.",
+      "kind": "assist",
+      "source_v1_id": 62
+    },
+    {
+      "id": 564,
+      "group": "Software and engineering",
+      "label": "Code review",
+      "description": "AI reviewed code and supplied findings or suggested changes.",
+      "kind": "assist",
+      "source_v1_id": 63
+    },
+    {
+      "id": 573,
+      "group": "Software and engineering",
+      "label": "Documentation",
+      "description": "AI drafted or revised technical documentation or code comments.",
+      "kind": "assist",
+      "source_v1_id": 64
+    },
+    {
+      "id": 582,
+      "group": "Software and engineering",
+      "label": "Configuration and infrastructure",
+      "description": "AI generated configuration, scripts, build definitions, or infrastructure descriptions.",
+      "kind": "assist",
+      "source_v1_id": 65
+    },
+    {
+      "id": 591,
+      "group": "Software and engineering",
+      "label": "Architecture assistance",
+      "description": "AI proposed software architecture, interfaces, or data-model designs.",
+      "kind": "assist",
+      "source_v1_id": 66
+    },
+    {
+      "id": 601,
+      "group": "Data and analysis",
+      "label": "Data extraction",
+      "description": "AI extracted structured information from documents or other unstructured inputs.",
+      "kind": "assist",
+      "source_v1_id": 67
+    },
+    {
+      "id": 610,
+      "group": "Data and analysis",
+      "label": "Data classification",
+      "description": "AI classified, tagged, or labeled records or content.",
+      "kind": "assist",
+      "source_v1_id": 68
+    },
+    {
+      "id": 619,
+      "group": "Data and analysis",
+      "label": "Data cleaning",
+      "description": "AI helped normalize, reconcile, deduplicate, or repair data.",
+      "kind": "assist",
+      "source_v1_id": 69
+    },
+    {
+      "id": 628,
+      "group": "Data and analysis",
+      "label": "Synthetic data",
+      "description": "AI generated synthetic examples, records, or datasets used in the work.",
+      "kind": "assist",
+      "source_v1_id": 70
+    },
+    {
+      "id": 637,
+      "group": "Data and analysis",
+      "label": "Query and formula generation",
+      "description": "AI generated queries, formulas, or analysis code.",
+      "kind": "assist",
+      "source_v1_id": 71
+    },
+    {
+      "id": 646,
+      "group": "Data and analysis",
+      "label": "Exploratory analysis",
+      "description": "AI explored data or suggested patterns, relationships, or hypotheses.",
+      "kind": "assist",
+      "source_v1_id": 72
+    },
+    {
+      "id": 655,
+      "group": "Data and analysis",
+      "label": "Statistical assistance",
+      "description": "AI helped choose, implement, or interpret statistical methods.",
+      "kind": "assist",
+      "source_v1_id": 73
+    },
+    {
+      "id": 664,
+      "group": "Data and analysis",
+      "label": "Prediction and estimation",
+      "description": "An AI model produced predictions, estimates, or forecasts used in the work.",
+      "kind": "assist",
+      "source_v1_id": 74
+    },
+    {
+      "id": 673,
+      "group": "Data and analysis",
+      "label": "Visualization assistance",
+      "description": "AI generated or helped design charts, diagrams, or data visualizations.",
+      "kind": "assist",
+      "source_v1_id": 75
+    },
+    {
+      "id": 682,
+      "group": "Data and analysis",
+      "label": "Data interpretation",
+      "description": "AI drafted explanations or conclusions from data or analysis results.",
+      "kind": "assist",
+      "source_v1_id": 76
+    },
+    {
+      "id": 691,
+      "group": "Data and analysis",
+      "label": "Model-based evaluation",
+      "description": "AI scored, ranked, or evaluated content or outputs against stated criteria.",
+      "kind": "assist",
+      "source_v1_id": 77
+    },
+    {
+      "id": 701,
+      "group": "Agents and automation",
+      "label": "Suggested actions",
+      "description": "AI recommended actions that a human then performed.",
+      "kind": "assist",
+      "source_v1_id": 78
+    },
+    {
+      "id": 710,
+      "group": "Agents and automation",
+      "label": "Single tool actions",
+      "description": "AI called tools to perform individual steps in the workflow.",
+      "kind": "assist",
+      "source_v1_id": 79
+    },
+    {
+      "id": 719,
+      "group": "Agents and automation",
+      "label": "Multi-step execution",
+      "description": "An AI agent planned or executed a sequence of connected steps.",
+      "kind": "assist",
+      "source_v1_id": 80
+    },
+    {
+      "id": 728,
+      "group": "Agents and automation",
+      "label": "Browser interaction",
+      "description": "An AI agent navigated or interacted with websites during production.",
+      "kind": "assist",
+      "source_v1_id": 81
+    },
+    {
+      "id": 737,
+      "group": "Agents and automation",
+      "label": "File editing",
+      "description": "An AI agent created or modified project files.",
+      "kind": "assist",
+      "source_v1_id": 82
+    },
+    {
+      "id": 746,
+      "group": "Agents and automation",
+      "label": "Command execution",
+      "description": "An AI agent ran commands, scripts, builds, or tests.",
+      "kind": "assist",
+      "source_v1_id": 83
+    },
+    {
+      "id": 755,
+      "group": "Agents and automation",
+      "label": "External service actions",
+      "description": "An AI agent performed actions in an external application or service.",
+      "kind": "assist",
+      "source_v1_id": 84
+    },
+    {
+      "id": 764,
+      "group": "Agents and automation",
+      "label": "Multiple agents",
+      "description": "Multiple AI agents contributed to the work or reviewed one another's output.",
+      "kind": "assist",
+      "source_v1_id": 85
+    },
+    {
+      "id": 773,
+      "group": "Agents and automation",
+      "label": "Human approval gates",
+      "description": "Specified agent actions required human approval before execution.",
+      "kind": "assist",
+      "source_v1_id": 86
+    },
+    {
+      "id": 782,
+      "group": "Agents and automation",
+      "label": "Unattended execution",
+      "description": "An AI agent performed some work without a human observing each step live.",
+      "kind": "assist",
+      "source_v1_id": 87
+    },
+    {
+      "id": 791,
+      "group": "Agents and automation",
+      "label": "Iterative agent work",
+      "description": "An AI agent evaluated intermediate results and revised its work over multiple iterations.",
+      "kind": "assist",
+      "source_v1_id": 88
+    },
+    {
+      "id": 801,
+      "group": "Applied assistance",
+      "label": "Question answering over supplied material",
+      "description": "AI answered questions using documents or other material supplied for this work.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 810,
+      "group": "Applied assistance",
+      "label": "Meeting note synthesis",
+      "description": "AI produced a summary of a meeting or conversation for use in the work.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 819,
+      "group": "Applied assistance",
+      "label": "Action item extraction",
+      "description": "AI identified follow-up tasks, owners, or deadlines from working material.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 828,
+      "group": "Applied assistance",
+      "label": "Form field completion",
+      "description": "AI proposed or populated structured fields using information available in the workflow.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 837,
+      "group": "Applied assistance",
+      "label": "Accessibility descriptions",
+      "description": "AI generated descriptions of visual or audio content to support accessibility.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 846,
+      "group": "Applied assistance",
+      "label": "Reading-level adaptation",
+      "description": "AI adapted material for a stated reading level or comprehension need.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 855,
+      "group": "Applied assistance",
+      "label": "Customer reply assistance",
+      "description": "AI drafted or proposed a response to a customer or audience member.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 864,
+      "group": "Applied assistance",
+      "label": "Scheduling assistance",
+      "description": "AI proposed or arranged times, sequencing, or assignments for a workflow.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 873,
+      "group": "Applied assistance",
+      "label": "Anomaly detection",
+      "description": "AI identified unusual patterns or records for further examination.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 882,
+      "group": "Applied assistance",
+      "label": "Personalized recommendations",
+      "description": "AI selected or ranked suggestions for a particular user, audience, or context.",
+      "kind": "assist",
+      "introduced_in": "2"
+    },
+    {
+      "id": 891,
+      "group": "Applied assistance",
+      "label": "Scenario simulation",
+      "description": "AI generated hypothetical outcomes or cases to explore decisions in the work.",
+      "kind": "assist",
+      "introduced_in": "2"
+    }
+  ]
+}

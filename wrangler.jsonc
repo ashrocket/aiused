@@ -11,6 +11,7 @@
   "workers_dev": true,
   "preview_urls": false,
   "routes": [{ "pattern": "aiused.org", "custom_domain": true }],
+  "analytics_engine_datasets": [{ "binding": "ANALYTICS", "dataset": "aiused_requests" }],
   "observability": {
     "enabled": true,
     "redact_query_string": true,

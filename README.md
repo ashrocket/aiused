@@ -1,9 +1,6 @@
 # AI Used — aiused.org
 
 First release deployed, 23 October 2026. Domain: `aiused.org` (AI used).
-Cloudflare registration is active through 23 October 2027. Checkout total: $8.50;
-auto-renewal is off; the current advertised renewal price is $11.20/year.
-Domain checkout and ownership status are recorded separately in `purchase-status.json`.
 The citation site is live at https://aiused.org. Public source and contribution
 guide: https://github.com/ashrocket/aiused. Initial Worker version:
 `d1d5c280-e193-4925-a3c5-0450c879acb7`; current verified version is
@@ -43,15 +40,25 @@ is the earlier offline prototype; the current site lives in `src/` and `public/`
 
 The site provides a searchable picker, reusable server-rendered citation pages,
 link/citation/Markdown copying, code lookup, an open vocabulary, and JSON exports.
-No account, combination database, cookies, analytics SDK, or model inference is
-needed. The selection stays in the browser; QR preview requests send its public
-code to the server. Hosting request logs may still exist.
+No account, combination database, cookies, or model inference is needed. The
+selection stays in the browser; QR preview requests send its public code to the
+server. Cloudflare Analytics Engine records aggregate route family, HTTP method,
+status, and timing. Custom events exclude exact codes and visitor identifiers;
+Cloudflare operational logs may still include request URLs.
 
-Routes: `/`, `/1/<payload>`, `/1/<payload>.json`, `/qr/1/<payload>.svg`, `/v1`,
+Routes: `/`, `/explore`, `/1/<payload>`, `/1/<payload>.json`, `/qr/1/<payload>.svg`, `/v1`,
 `/v1/categories.json`, `/about`, and `/health`. Citation content works without JS.
 The first release's `/<code>` and `/qr/<code>.svg` routes redirect permanently.
 Empty or conflicting combinations remain readable, but the UI disables sharing
 until the selection is clarified. Their QR API routes still exist.
+
+The `/explore` page shows the exact cardinality offset, combination rank, integer,
+and URL-safe base-64 payload for a v1 selection. A separate `categories-v2.json`
+draft proposes 99 AI-action definitions in sparse slots among IDs 1–999;
+`context-v2.json` holds 11 human-involvement and uncertainty statements in a
+separate range. Both use one fixed 999-slot code space in `public/codec-v2.mjs`
+and `codec_v2.py`. Version 2 is not served or frozen; public review can improve
+the draft before its numbered meanings become permanent.
 
 QR downloads use the complete case-sensitive HTTPS URL, standard M correction,
 the smallest byte-mode symbol, and a four-module white border. The SVG has physical
@@ -142,16 +149,14 @@ npm run deploy:check
 npm run deploy
 ```
 
-Six tests pass: all 4,096 subsets of a reduced universe, every v1 singleton and
-pair, 2,500 seeded samples across all cardinalities, fixed vectors, length bounds,
-and invalid-input rejection. Sixteen Node tests cover routes, SSR, canonical
-input validation, semantic conflicts, immutable vocabulary, and QR output. The
-QR suite independently decodes 36 raster cases using test-only jsQR, including
-case-sensitive codes, underscores and the maximum length. Independent Haikrew
-source review passed. Project-local Wrangler 4.152.0 dry run packaged nine modules,
-121.44 KiB total (31.20 KiB gzip), with no storage bindings.
+The test suite covers canonical routes, server-rendered citations, the frozen
+v1 vocabulary, QR URL decoding, the explorer, the v2 draft codec, and analytics
+failure handling. The QR suite independently decodes raster cases with
+test-only jsQR, including case-sensitive codes, underscores and the maximum
+length. Project-local Wrangler 4.152.0 dry run packages the site with its
+Analytics Engine binding. These checks cover source, not the deployed release.
 
-`scripts/package.py` regenerates `src/catalog.mjs`, `src/assets.mjs`, the nine-file
+`scripts/package.py` regenerates `src/catalog.mjs`, `src/assets.mjs`, the allowlisted
 allowlisted staging directory and a connector multipart payload. Deployment never
 includes purchase records, tests, browser fixtures, the jsQR test decoder or other
 workspace files. The runtime QR library is vendored qrcode-generator 2.0.4 (MIT);

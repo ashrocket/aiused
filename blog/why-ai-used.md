@@ -1,43 +1,45 @@
-# AI used. Here’s how.
+# “Made with AI” leaves too much out
 
-“Made with AI” can mean a spelling suggestion, a generated image, a working draft,
-or an agent that wrote and tested code. The phrase asks readers to treat those as
-the same thing. We built AI Used to give creators a more precise way to describe
-what happened.
+When someone puts “made with AI” beside a piece of work, I still want to know
+what happened. Did a spelling checker suggest a comma? Did a model extend an
+image? Did an agent edit code and run the tests? Those are different kinds of
+help. One label shouldn't have to carry all of them.
 
-Choose the statements that apply to a particular work. If AI expanded the edge
-of an illustration, then a person revised and reviewed the affected image, the
-selection is 27, 94, and 95. It becomes the short link
-[`aiused.org/1/Y_3`](https://aiused.org/1/Y_3). The linked page spells out all three
-statements. A QR code can carry the same full URL on a print or physical object.
+AI Used is a small way to be more specific. Pick the statements that describe
+the work in front of you, including what a person directed, changed, or
+reviewed. You get a link that a reader can open without an account.
 
-The first path segment is the vocabulary version. In `/1/Y_3`, `1` means
-version 1. `Y_3` is a reversible encoding of the selected category numbers.
-There is no account or database of combinations. Anyone can decode the code with
-the published vocabulary and algorithm. Common selections produce very short
-links; all possible selections fit in at most 17 code characters. A fixed four
-character code would not be able to represent all combinations of 99 statements.
+Say AI extended the edge of an illustration, then a person revised and fully
+reviewed the result. The selected statements are 27, 94, and 95. Their link is
+[`aiused.org/1/Y_3`](https://aiused.org/1/Y_3). The page spells out each
+statement, and a QR code can carry the same URL on a printed piece.
 
-We are opening the entire application, vocabulary, and tests for contributions.
-You can [submit a pull request](https://github.com/ashrocket/aiused/blob/main/CONTRIBUTING.md)
-to improve the interface or propose a disclosure. The short link is also a
-promise: an existing code will not silently acquire a new meaning. Version 1's
-99 numbered definitions are frozen. A meaningful edit or new category goes into
-a new vocabulary version with a new first path segment, while old links
-continue to say what they said before.
+The first path segment is the vocabulary version. In `/1/Y_3`, `1` is the
+published version of the statements, and `Y_3` is a reversible code for the
+selection. There is no database of possible combinations. The source explains
+the calculation, so anyone can read a code independently of this website. Most
+small selections produce a short link; even the largest possible selection
+fits in 17 code characters.
 
-The link describes selected actions; it does not identify the work or creator.
-If you need to correct your own disclosure, generate a code from the corrected
-selection and update the link beside your work. A PR cannot change only one
-person's page because the same selection produces the same code for everyone.
-Product names, model versions, dates, and supporting evidence can sit next to
-the link on your own site or in your own publication.
+That version number matters. If we quietly changed what a published statement
+means, an old link could tell a new story. The original 99 statements are
+therefore fixed. We can improve wording or add ideas in a future vocabulary
+version and keep the old links readable. The full application, vocabulary, and
+tests are [open source](https://github.com/ashrocket/aiused). If a definition
+is unclear, [send a pull request](https://github.com/ashrocket/aiused/blob/main/CONTRIBUTING.md).
 
-This is a self-declaration, not an AI detector, certification, or measure of
-quality. An unselected statement is unclaimed, not necessarily false. The empty
-code does not mean “no AI.” We want the mark to make a conversation more specific,
-without pretending it can settle every question about the work.
+A code describes selected actions. It does not name the creator or identify a
+particular work. If you need to correct your own disclosure, make a new link
+from the corrected selection and replace the link beside your work. A PR cannot
+edit only your page because the same selection has the same code for everyone.
+Names of tools, dates, model versions, and supporting evidence can live with
+the work itself.
 
-Read the [vocabulary](https://aiused.org/v1), try the
-[disclosure builder](https://aiused.org/#builder), or
-[help improve the project](https://github.com/ashrocket/aiused).
+This is a self-declaration. It does not detect AI, prove a claim, certify a
+work, or measure its quality. Unselected statements are unclaimed. Even an empty
+code does not say “no AI.” I would rather give a reader a precise claim they
+can ask about than a badge that seems to settle a question it cannot answer.
+
+You can [read the vocabulary](https://aiused.org/v1),
+[make a disclosure](https://aiused.org/#builder), or
+[look at the source](https://github.com/ashrocket/aiused).

@@ -4,6 +4,14 @@ AI Used is a public disclosure vocabulary and reversible code for aiused.org.
 The first release has 99 numbered categories describing AI contributions and
 human involvement. The runtime is a dependency-free ES-module Cloudflare Worker.
 
+The site is a simple editorial website with the feel of the independent web circa
+2007–2009: a centered reading column, strong type, plain links and restrained
+rules. Keep the disclosure form easy to use. Avoid numbered process strips,
+pitch-deck feature cards, and generic AI marketing slogans. Functional category
+IDs and version codes remain visible because they carry meaning. For new public
+copy, use the installed Ashley voice skill with its current live source exclusions;
+if that read is unavailable, edit plainly without claiming a voice match.
+
 Keep category IDs and code versions stable once published. Never silently change
 an existing code's meaning. Unselected categories mean unclaimed, not absent.
 The empty set means no declarations, not proof that no AI was used. Describe

@@ -4,6 +4,8 @@ import { home, citation, vocabulary, about, shell, declarations, citationText, o
 import { catalogJSON, catalogHash } from './catalog.mjs';
 import { assets } from './assets.mjs';
 import { postTitle, postBody } from './blog.mjs';
+import { explore } from './explore.mjs';
+import { recordRequest } from './analytics.mjs';
 
 const security={
  'Content-Security-Policy':"default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
@@ -23,10 +25,11 @@ export function handle(request){
  if(path==='/health')return json({status:'ok',service:'aiused',release:'v1.0.0',vocabulary_sha256:catalogHash});
  if(path==='/v1/categories.json')return respond(catalogJSON,'application/json; charset=utf-8',200,{'Access-Control-Allow-Origin':'*','ETag':`"${catalogHash}"`,'Cache-Control':'public, max-age=31536000, immutable'});
  if(path==='/v1')return respond(vocabulary());
+ if(path==='/explore')return respond(explore());
  if(path==='/about')return respond(about());
  if(path==='/blog/why-ai-used')return respond(shell(postTitle,`<main id="main" class="reading blog-post"><p class="eyebrow">From AI Used · 23 October 2026</p><h1>${postTitle}</h1>${postBody}</main>`,{path,description:'Why we built a short, versioned link for precise AI-use disclosures, and how to contribute.'}));
  if(path==='/robots.txt')return respond('User-agent: *\nAllow: /\nSitemap: https://aiused.org/sitemap.xml\n','text/plain; charset=utf-8');
- if(path==='/sitemap.xml')return respond(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['/','/about','/v1','/blog/why-ai-used'].map(p=>`<url><loc>${origin}${p}</loc></url>`).join('')}</urlset>`,'application/xml; charset=utf-8');
+ if(path==='/sitemap.xml')return respond(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['/','/explore','/about','/v1','/blog/why-ai-used'].map(p=>`<url><loc>${origin}${p}</loc></url>`).join('')}</urlset>`,'application/xml; charset=utf-8');
  if(path==='/favicon.svg')return respond('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#173e32"/><path d="M11 28L28 11M13 11h15v15" fill="none" stroke="#d9f99d" stroke-width="4"/></svg>','image/svg+xml');
  if(path==='/lookup'){
   try{
@@ -77,4 +80,4 @@ export function handle(request){
  }
  return errorPage(404,'No disclosure found.','This path is not a valid version 1 disclosure code. Codes are case-sensitive.');
 }
-export default{fetch(request){const response=handle(request);return request.method==='HEAD'?new Response(null,{status:response.status,headers:response.headers}):response;}};
+export default{fetch(request,env){const started=Date.now();const response=handle(request);recordRequest(request,response,env,Date.now()-started);return request.method==='HEAD'?new Response(null,{status:response.status,headers:response.headers}):response;}};

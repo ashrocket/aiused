@@ -1,0 +1,19 @@
+{
+  "status": "draft",
+  "version": "2",
+  "universe_size": 999,
+  "purpose": "Human involvement and uncertainty statements are separate from the 99 AI-action types. They occupy reserved IDs within the same version 2 code space.",
+  "categories": [
+    {"id":901,"group":"Human involvement and uncertainty","label":"AI-capable software only","description":"AI-capable software was used, but the creator reports no known AI feature use in this work; available features alone are not evidence of use.","kind":"context","source_v1_id":89},
+    {"id":910,"group":"Human involvement and uncertainty","label":"Uncertain AI involvement","description":"The creator cannot establish whether AI contributed to one or more steps or inputs.","kind":"context","source_v1_id":90},
+    {"id":919,"group":"Human involvement and uncertainty","label":"Human source material","description":"Human-authored source material, designs, recordings, or code formed part of the input.","kind":"context","source_v1_id":91},
+    {"id":928,"group":"Human involvement and uncertainty","label":"Human direction","description":"A human supplied the goals, prompts, constraints, or creative direction.","kind":"context","source_v1_id":92},
+    {"id":937,"group":"Human involvement and uncertainty","label":"Human selection","description":"A human selected which AI suggestions or outputs to include.","kind":"context","source_v1_id":93},
+    {"id":946,"group":"Human involvement and uncertainty","label":"Human revision","description":"A human materially edited or reworked AI output before inclusion.","kind":"context","source_v1_id":94},
+    {"id":955,"group":"Human involvement and uncertainty","label":"Full human review","description":"A human reviewed all AI-affected portions of the declared work before release.","kind":"context","source_v1_id":95},
+    {"id":964,"group":"Human involvement and uncertainty","label":"Independent factual checks","description":"A human checked relevant factual claims against sources independent of the generating AI.","kind":"context","source_v1_id":96},
+    {"id":973,"group":"Human involvement and uncertainty","label":"Human-reviewed test results","description":"Tests were executed and their results reviewed by a human; this does not imply full coverage or correctness.","kind":"context","source_v1_id":97},
+    {"id":982,"group":"Human involvement and uncertainty","label":"Partial human review","description":"A human reviewed only some AI-affected portions of the declared work before release.","kind":"context","source_v1_id":98},
+    {"id":991,"group":"Human involvement and uncertainty","label":"No human output review","description":"The declared AI output was released without human review of that output.","kind":"context","source_v1_id":99}
+  ]
+}
